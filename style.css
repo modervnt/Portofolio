@@ -439,6 +439,10 @@ footer p:nth-child(2){
 /*media queries good luck*/
 
 @media only screen and (max-width:500px) {
+
+    *{
+        overflow-x: hidden;
+    }
     nav{
         display: flex;
         flex-direction: column;
@@ -449,6 +453,25 @@ footer p:nth-child(2){
        position: absolute;
        top: 50px;
        right: 50px;
+    }
+
+    .hero h1{
+        font-size: 30px;
+    }
+    .content{
+        margin-top: 300px;
+        height: 65vh;
+    }
+
+    .about-text{
+        height: 65vh;
+    }
+    .about-text h2{
+        margin-top: 250px;
+    }
+
+    .skills h1{
+        font-size: 40px;
     }
 
     img{
@@ -484,7 +507,7 @@ footer p:nth-child(2){
    
 
     .hero{
-        height: 75vh;
+        height: 100vh;
     }
 
     .about-text h2{
@@ -492,18 +515,29 @@ footer p:nth-child(2){
         margin-bottom: 30px;
     }
 
+    .about-text button{
+        /*align-content: center;
+        margin-left: 500px;
+        left: 100px;*/
+        align-content: flex-start;
+    }
+    .service h2{
+        font-size: 50px;
+        text-align: left;
+        margin-right: 10px;
+        
+    }
+
     .box{
         display: flex;
         flex-direction: column;
-        margin-top: -150px;
+        margin-top: 150px;
     }
 
-    .skills h1{
-        font-size: 50px;
-    }
+    
 
     .skills{
-        height: 50vh;
+        height: 100vh;
     }
 
     .contact-me p{
